@@ -115,7 +115,7 @@ PanelWindow {
     }
 
     SystemClock { id: clock; enabled: root.visible; precision: SystemClock.Minutes }
-    readonly property string hello: { const h = clock.date.getHours(); return h < 5 ? "Good night" : h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening"; }
+    readonly property string hello: { const h = clock.date.getHours(); return h < 5 ? "Boa noite" : h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite"; }
     readonly property string who: (Theme.state.name || Quickshell.env("USER")).replace(/&/g, "&amp;").replace(/</g, "&lt;")
 
     // имя и подпись текущего шелла — из его rice.json (тот же, что рисует приложение Rice)

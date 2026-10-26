@@ -44,7 +44,7 @@ PanelWindow {
         t.setUTCDate(t.getUTCDate() + 4 - (t.getUTCDay() || 7));
         return Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 86400000 + 1) / 7);
     }
-    readonly property string hello: { const h = clock.date.getHours(); return h < 5 ? "Good night" : h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening"; }
+    readonly property string hello: { const h = clock.date.getHours(); return h < 5 ? "Boa noite" : h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite"; }
 
     Stage {
         id: stage
